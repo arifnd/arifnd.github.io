@@ -4,6 +4,7 @@
   
   <url>
     <loc>https://arifnd.github.io/</loc>
+    <lastmod>2019-12-10T02:42:40+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -17,6 +18,51 @@
   </url>
   
   <url>
+    <loc>https://arifnd.github.io/about/</loc>
+    <lastmod>2019-12-10T02:42:40+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://arifnd.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://arifnd.github.io/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/posts/2019/12/halo-dunia/</loc>
+    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/posts/</loc>
+    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/</loc>
+    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://arifnd.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://arifnd.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/untagged/</loc>
+    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://arifnd.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -27,20 +73,6 @@
                 rel="alternate"
                 hreflang="id"
                 href="https://arifnd.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://arifnd.github.io/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://arifnd.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://arifnd.github.io/tags/"
                 />
   </url>
   
