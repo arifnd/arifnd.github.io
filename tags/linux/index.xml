@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Ari Effendi</title>
+    <link>https://arifnd.github.io/tags/linux/</link>
+    <description>Recent content in linux on Ari Effendi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 12 Nov 2019 13:30:00 +0700</lastBuildDate>
+    
+	<atom:link href="https://arifnd.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
+      <link>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</link>
+      <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
+      
+      <guid>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</guid>
+      <description>source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</description>
+    </item>
+    
+  </channel>
+</rss>

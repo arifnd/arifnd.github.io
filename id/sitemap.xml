@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://arifnd.github.io/</loc>
-    <lastmod>2019-12-10T02:42:40+07:00</lastmod>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,6 +15,41 @@
                 hreflang="id"
                 href="https://arifnd.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</loc>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/posts/</loc>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/server/</loc>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/</loc>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://arifnd.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://arifnd.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/ubuntu/</loc>
+    <lastmod>2019-12-13T23:00:34+07:00</lastmod>
   </url>
   
   <url>
@@ -33,33 +68,43 @@
   </url>
   
   <url>
-    <loc>https://arifnd.github.io/posts/2019/12/halo-dunia/</loc>
-    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+    <loc>https://arifnd.github.io/tags/debian/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://arifnd.github.io/posts/</loc>
-    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+    <loc>https://arifnd.github.io/tags/linux/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://arifnd.github.io/tags/</loc>
-    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://arifnd.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://arifnd.github.io/tags/"
-                />
+    <loc>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://arifnd.github.io/tags/untagged/</loc>
-    <lastmod>2019-12-10T02:41:26+07:00</lastmod>
+    <loc>https://arifnd.github.io/tags/php/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/raspberry-pi/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/rpi-zero-w/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/tags/swap/</loc>
+    <lastmod>2019-11-12T13:30:00+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://arifnd.github.io/posts/2019/01/halo-dunia/</loc>
+    <lastmod>2019-01-01T19:01:01+07:00</lastmod>
   </url>
   
   <url>

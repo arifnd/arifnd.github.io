@@ -4,17 +4,88 @@
         <link>https://arifnd.github.io/posts/</link>
         <description>Recent content in Posts on Ari Effendi</description>
         <generator>Hugo -- gohugo.io</generator>
-        <lastBuildDate>Tue, 10 Dec 2019 02:41:26 +0700</lastBuildDate>
+        <lastBuildDate>Fri, 13 Dec 2019 23:00:34 +0700</lastBuildDate>
         <atom:link href="https://arifnd.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Halo Dunia</title>
-            <link>https://arifnd.github.io/posts/2019/12/halo-dunia/</link>
-            <pubDate>Tue, 10 Dec 2019 02:41:26 +0700</pubDate>
+            <title>Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</title>
+            <link>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</link>
+            <pubDate>Fri, 13 Dec 2019 23:00:34 +0700</pubDate>
             
-            <guid>https://arifnd.github.io/posts/2019/12/halo-dunia/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
+            <guid>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</guid>
+            <description>Hostname atau host name atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik. Pada ubuntu hostname dapat diubah menggunakan perintah hostnamectl ataupun dengan menyunting berkas /etc/hostname. Namun, pada ubuntu versi 18.04 terdapat kendala yang mengakibatkan hostname yang sudah disesuaikan kembali pada konfigurasi awal.
+Untuk mengatasi kendala ini perlu dilakukan penyesuai pada berkas  /etc/cloud/cloud.cfg dengan langkah sebagai berikut:
+ buka terminal, jika ubuntu tidak memiliki GUI silahkan lewati langkah ini.</description>
+            <content type="html"><![CDATA[<p>Hostname atau <em>host name</em> atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik. Pada ubuntu hostname dapat diubah menggunakan perintah <code>hostnamectl</code> ataupun dengan menyunting berkas <code>/etc/hostname</code>. Namun, pada ubuntu versi 18.04 terdapat kendala yang mengakibatkan hostname yang sudah disesuaikan kembali pada konfigurasi awal.</p>
+<p>Untuk mengatasi kendala ini perlu dilakukan penyesuai pada berkas <code> /etc/cloud/cloud.cfg</code> dengan langkah sebagai berikut:</p>
+<ol>
+<li>buka terminal, jika ubuntu tidak memiliki GUI silahkan lewati langkah ini.</li>
+<li>Pastikan memiliki hak aksess <strong>root</strong> atapun dapat menjalankan perintah <code>sudo</code>.</li>
+<li>jalankan perintah <code>sudo nano /etc/cloud/cloud.cfg</code> atau <code>nano /etc/cloud/cloud.cfg</code> jika login sebagai <strong>root</strong>.</li>
+<li>cari teks <code>preserve_hostname</code> dan ubah parameternya yang sebelumya <code>false</code> menjadi <code>true</code> lalu simpan.</li>
+<li>ubah kembali hostname dengan menjalankan perintah <code>sudo hostnamectl set-hostname nama_hostname</code> atau <code>hostnamectl set-hostname nama_hostname</code>.</li>
+<li>Atau bisa juga dengan cara menyunting berkas <code>/etc/hostname</code> lalu simpan.</li>
+</ol>
+<p>Untuk mengetahui hasilnya silahkan me-<em>restart</em> komputer ataupun server ubuntu.</p>
+<p>sumber: <a href="https://askubuntu.com/questions/1028633/host-name-reverts-to-old-name-after-reboot-in-18-04-lts">askubuntu.com</a></p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
+            <link>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</link>
+            <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
+            
+            <guid>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</guid>
+            <description>source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</description>
+            <content type="html"><![CDATA[<p>
+    <figure class="left" >
+        <img src="/img/pi-zero-htop.png"   />
+
+        
+            <figcaption class="center" >source: unsplash.com</figcaption>
+        
+    </figure>
+
+
+Berawal dari kendala ketika memasang paket PHP melalui composer.</p>
+<pre><code>PHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar
+</code></pre><p>Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</p>
+<p>Dari kondisi tersebut solusi yang memungkinkan dilakukan adalah menyesuaikan alokasi swap pada Raspberry Pi Zero W menjadi 1GB atau lebih. Berikut ini adalah langkah-langkahnya:</p>
+<ol>
+<li>Buka berkas <code>/etc/dphys-swapfile</code>.</li>
+<li>Cari bagian <code>CONF_SWAPSIZE=100</code>.</li>
+<li>ubah nilai <code>100</code> sesuai ukuran swap yang diinginkan.</li>
+<li>Agar perubahan terapkan oleh sistem, jalankan perintah <code>/etc/init.d/dphys-swapfile restart</code>.</li>
+</ol>
+<p>Setelah menyesuaikan ukuran swap pada Raspberry Pi Zero W. Pemasangan paket dengan composer berjalan dengan lancar.</p>
+<p><strong>Referensi:</strong></p>
+<ol>
+<li><a href="https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors">composer proc_open(): fork failed errors</a></li>
+<li><a href="https://raspberrypi.stackexchange.com/questions/70/how-to-set-up-swap-space">Raspberry Pi: How to set up swap space?</a></li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Halo Dunia</title>
+            <link>https://arifnd.github.io/posts/2019/01/halo-dunia/</link>
+            <pubDate>Tue, 01 Jan 2019 19:01:01 +0700</pubDate>
+            
+            <guid>https://arifnd.github.io/posts/2019/01/halo-dunia/</guid>
+            <description> source: unsplash.com  </description>
+            <content type="html"><![CDATA[
+    <figure class="left" >
+        <img src="/img/cover.jpg"   />
+
+        
+            <figcaption class="center" >source: unsplash.com</figcaption>
+        
+    </figure>
+
+
+]]></content>
         </item>
         
     </channel>

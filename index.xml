@@ -5,10 +5,21 @@
     <link>https://arifnd.github.io/</link>
     <description>Recent content on Ari Effendi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Dec 2019 02:42:40 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2019 23:00:34 +0700</lastBuildDate>
     
 	<atom:link href="https://arifnd.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</title>
+      <link>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</link>
+      <pubDate>Fri, 13 Dec 2019 23:00:34 +0700</pubDate>
+      
+      <guid>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</guid>
+      <description>Hostname atau host name atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik. Pada ubuntu hostname dapat diubah menggunakan perintah hostnamectl ataupun dengan menyunting berkas /etc/hostname. Namun, pada ubuntu versi 18.04 terdapat kendala yang mengakibatkan hostname yang sudah disesuaikan kembali pada konfigurasi awal.
+Untuk mengatasi kendala ini perlu dilakukan penyesuai pada berkas  /etc/cloud/cloud.cfg dengan langkah sebagai berikut:
+ buka terminal, jika ubuntu tidak memiliki GUI silahkan lewati langkah ini.</description>
+    </item>
     
     <item>
       <title>Tentang</title>
@@ -20,12 +31,22 @@
     </item>
     
     <item>
-      <title>Halo Dunia</title>
-      <link>https://arifnd.github.io/posts/2019/12/halo-dunia/</link>
-      <pubDate>Tue, 10 Dec 2019 02:41:26 +0700</pubDate>
+      <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
+      <link>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</link>
+      <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
       
-      <guid>https://arifnd.github.io/posts/2019/12/halo-dunia/</guid>
-      <description></description>
+      <guid>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</guid>
+      <description>source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</description>
+    </item>
+    
+    <item>
+      <title>Halo Dunia</title>
+      <link>https://arifnd.github.io/posts/2019/01/halo-dunia/</link>
+      <pubDate>Tue, 01 Jan 2019 19:01:01 +0700</pubDate>
+      
+      <guid>https://arifnd.github.io/posts/2019/01/halo-dunia/</guid>
+      <description> source: unsplash.com  </description>
     </item>
     
   </channel>

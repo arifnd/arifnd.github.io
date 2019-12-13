@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Ari Effendi ">
+<meta name="description" content="source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/" />
+
+
+    <title>
+        
+            Menyesuaikan ukuran swap file di Raspberry Pi Zero W :: Ari Effendi 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://arifnd.github.io/main.min.7bfbbe12786fa0ded4b4c0d792cbb36a5bd0bdb0b856dde57aa7b1f6fe0f2b87.css">
+
+
+
+
+<meta itemprop="name" content="Menyesuaikan ukuran swap file di Raspberry Pi Zero W">
+<meta itemprop="description" content="source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.">
+<meta itemprop="datePublished" content="2019-11-12T13:30:00&#43;07:00" />
+<meta itemprop="dateModified" content="2019-11-12T13:30:00&#43;07:00" />
+<meta itemprop="wordCount" content="149">
+
+
+
+<meta itemprop="keywords" content="debian,linux,php,raspberry pi,rpi zero w,swap," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Menyesuaikan ukuran swap file di Raspberry Pi Zero W"/>
+<meta name="twitter:description" content="source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
+PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2019-11-12 13:30:00 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://arifnd.github.io/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">arifnd@github:~$ cd ~</span>
+            <span class="logo__cursor" style="background-color:#27ae60"></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://arifnd.github.io/about">Tentang</a></li><li><a href="https://arifnd.github.io/posts">Tulisan</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span style="margin-right: 15px;">
+                
+            </span>
+            
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>1 menit
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/">Menyesuaikan ukuran swap file di Raspberry Pi Zero W</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                <p>
+    <figure class="left" >
+        <img src="https://arifnd.github.io/img/pi-zero-htop.png"   />
+
+        
+            <figcaption class="center" >source: unsplash.com</figcaption>
+        
+    </figure>
+
+
+Berawal dari kendala ketika memasang paket PHP melalui composer.</p>
+<pre><code>PHP Fatal error: Uncaught exception 'ErrorException' with message 'proc_open(): fork failed - Cannot allocate memory' in phar
+</code></pre><p>Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</p>
+<p>Dari kondisi tersebut solusi yang memungkinkan dilakukan adalah menyesuaikan alokasi swap pada Raspberry Pi Zero W menjadi 1GB atau lebih. Berikut ini adalah langkah-langkahnya:</p>
+<ol>
+<li>Buka berkas <code>/etc/dphys-swapfile</code>.</li>
+<li>Cari bagian <code>CONF_SWAPSIZE=100</code>.</li>
+<li>ubah nilai <code>100</code> sesuai ukuran swap yang diinginkan.</li>
+<li>Agar perubahan terapkan oleh sistem, jalankan perintah <code>/etc/init.d/dphys-swapfile restart</code>.</li>
+</ol>
+<p>Setelah menyesuaikan ukuran swap pada Raspberry Pi Zero W. Pemasangan paket dengan composer berjalan dengan lancar.</p>
+<p><strong>Referensi:</strong></p>
+<ol>
+<li><a href="https://getcomposer.org/doc/articles/troubleshooting.md#proc-open-fork-failed-errors">composer proc_open(): fork failed errors</a></li>
+<li><a href="https://raspberrypi.stackexchange.com/questions/70/how-to-set-up-swap-space">Raspberry Pi: How to set up swap space?</a></li>
+</ol>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://arifnd.github.io/tags/debian">debian</a></span><span class="tag"><a href="https://arifnd.github.io/tags/linux">linux</a></span><span class="tag"><a href="https://arifnd.github.io/tags/php">php</a></span><span class="tag"><a href="https://arifnd.github.io/tags/raspberry-pi">raspberry pi</a></span><span class="tag"><a href="https://arifnd.github.io/tags/rpi-zero-w">rpi zero w</a></span><span class="tag"><a href="https://arifnd.github.io/tags/swap">swap</a></span>
+                </p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>149 Kata</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>12-11-2019 13:30 &#43;0700</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h"></span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                        <span class="button next">
+                            <a href="https://arifnd.github.io/posts/2019/01/halo-dunia/">
+                                <span class="button__text">Halo Dunia</span>
+                                <span class="button__icon">→</span>
+                            </a>
+                        </span>
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2019</span>
+            
+                <span><a href="https://arifnd.github.io/">Ari Effendi</a></span>
+            
+            
+            <span> <a href="https://arifnd.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Theme by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="https://arifnd.github.io/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
