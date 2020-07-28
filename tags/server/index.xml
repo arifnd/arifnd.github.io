@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>server on Ari Effendi</title>
-    <link>https://arifnd.github.io/tags/server/</link>
-    <description>Recent content in server on Ari Effendi</description>
+    <title>server on Catatanku</title>
+    <link>/tags/server/</link>
+    <description>Recent content in server on Catatanku</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Fri, 13 Dec 2019 23:00:34 +0700</lastBuildDate>
     
-	<atom:link href="https://arifnd.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</title>
-      <link>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</link>
+      <link>/2019/12/memperbaiki-hostname-ubuntu/</link>
       <pubDate>Fri, 13 Dec 2019 23:00:34 +0700</pubDate>
       
-      <guid>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</guid>
-      <description>Hostname atau host name atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik. Pada ubuntu hostname dapat diubah menggunakan perintah hostnamectl ataupun dengan menyunting berkas /etc/hostname. Namun, pada ubuntu versi 18.04 terdapat kendala yang mengakibatkan hostname yang sudah disesuaikan kembali pada konfigurasi awal.
-Untuk mengatasi kendala ini perlu dilakukan penyesuai pada berkas  /etc/cloud/cloud.cfg dengan langkah sebagai berikut:
- buka terminal, jika ubuntu tidak memiliki GUI silahkan lewati langkah ini.</description>
+      <guid>/2019/12/memperbaiki-hostname-ubuntu/</guid>
+      <description>&lt;p&gt;Hostname atau &lt;em&gt;host name&lt;/em&gt; atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Labs on Catatanku</title>
+    <link>/labs/</link>
+    <description>Recent content in Labs on Catatanku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 29 Mar 2020 17:02:10 +0700</lastBuildDate>
+    
+	<atom:link href="/labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>acme.sh</title>
+      <link>/labs/acme-sh/</link>
+      <pubDate>Sun, 29 Mar 2020 17:02:10 +0700</pubDate>
+      
+      <guid>/labs/acme-sh/</guid>
+      <description>Halaman Github acme.sh  Instalasi curl https://get.acme.sh | sh
+atau
+wget -O - https://get.acme.sh | sh
+ Mendapatkan sertifikat satu domain
+acme.sh --issue -d example.com -w /var/www/html
+multi domain
+acme.sh --issue -d example.com -d www.example.com -d cp.example.com -w /home/wwwroot/example.com
+ Upgrade manual
+acme.sh --upgrade
+otomatis
+acme.sh --upgrade --auto-upgrade
+menonaktifkan autoupdate
+acme.sh --upgrade --auto-upgrade 0
+ </description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/labs/docker/</link>
+      <pubDate>Sun, 29 Mar 2020 17:02:10 +0700</pubDate>
+      
+      <guid>/labs/docker/</guid>
+      <description>Instalasi Swarm Inisialisasi satu node
+ docker swarm init
+multi node
+docker swarm init --advertise-addr &amp;lt;MANAGER-IP&amp;gt;
+Menambahkan Node menambahkan node
+1 2 3  docker swarm join \ --token &amp;lt;TOKEN&amp;gt; \ &amp;lt;MANAGER-IP&amp;gt;:2377   menampilkan token
+docker swarm join-token worker
+Membuat Service docker service create --replicas 1 --name helloworld alpine ping docker.com
+Memeriksa Service docker service inspect --pretty helloworld
+Mengubah Skala docker service scale &amp;lt;SERVICE-ID&amp;gt;=&amp;lt;NUMBER-OF-TASKS&amp;gt;
+contoh:
+docker service scale helloworld=5</description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>/labs/mysql/</link>
+      <pubDate>Sun, 29 Mar 2020 16:59:54 +0700</pubDate>
+      
+      <guid>/labs/mysql/</guid>
+      <description>mengubah password user 1 2 3  USE mysql; SET PASSWORD FOR &amp;#39;user-name&amp;#39;@&amp;#39;localhost&amp;#39; = PASSWORD(&amp;#39;NEW_USER_PASSWORD&amp;#39;); FLUSH PRIVILEGES;    </description>
+    </item>
+    
+    <item>
+      <title>Perintah Dasar</title>
+      <link>/labs/basic-command/</link>
+      <pubDate>Fri, 13 Mar 2020 21:46:50 +0700</pubDate>
+      
+      <guid>/labs/basic-command/</guid>
+      <description>Ekstrak file tar.gz tar zxvf nama-file.tar.gz
+ Ekstrak file tar.gz ke folder tertentu tar zxvf nama-file.tar.gz -C /home/user/tujuan
+ mengubah versi default php-cli di Ubuntu # update-alternatives --set php /usr/bin/php7.3
+ </description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>/labs/git/</link>
+      <pubDate>Tue, 10 Mar 2020 14:46:59 +0700</pubDate>
+      
+      <guid>/labs/git/</guid>
+      <description>Update git submodule For first time [ref ]
+git submodule update --init --recursive
+For update
+git submodule update --recursive --remote
+or
+git pull --recurse-submodules
+or
+git submodule foreach git pull origin master
+ </description>
+    </item>
+    
+  </channel>
+</rss>

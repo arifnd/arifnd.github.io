@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>troubleshoot on Catatanku</title>
+    <link>/categories/troubleshoot/</link>
+    <description>Recent content in troubleshoot on Catatanku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 13 Dec 2019 23:00:34 +0700</lastBuildDate>
+    
+	<atom:link href="/categories/troubleshoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</title>
+      <link>/2019/12/memperbaiki-hostname-ubuntu/</link>
+      <pubDate>Fri, 13 Dec 2019 23:00:34 +0700</pubDate>
+      
+      <guid>/2019/12/memperbaiki-hostname-ubuntu/</guid>
+      <description>&lt;p&gt;Hostname atau &lt;em&gt;host name&lt;/em&gt; atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
+      <link>/2019/11/menyesuaikan-ukuran-swap-pi-zero/</link>
+      <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
+      
+      <guid>/2019/11/menyesuaikan-ukuran-swap-pi-zero/</guid>
+      <description>&lt;p&gt;Berawal dari kendala ketika memasang paket PHP melalui composer.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;PHP Fatal error: Uncaught exception &amp;#39;ErrorException&amp;#39; with message &amp;#39;proc_open(): fork failed - Cannot allocate memory&amp;#39; in phar
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,18 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	
-	<sitemap>
-	   	<loc>https://arifnd.github.io/en/sitemap.xml</loc>
-		
-	   	<lastmod>2019-12-10T02:42:40+07:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
-	   	<loc>https://arifnd.github.io/id/sitemap.xml</loc>
-		
-	   	<lastmod>2019-12-13T23:00:34+07:00</lastmod>
-		
-	</sitemap>
-	
-</sitemapindex>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>/labs/acme-sh/</loc><lastmod>2020-03-29T17:02:10&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/labs/docker/</loc><lastmod>2020-03-29T17:02:10&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/labs/</loc><lastmod>2020-03-29T17:02:10&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/labs/mysql/</loc><lastmod>2020-03-29T16:59:54&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/labs/basic-command/</loc><lastmod>2020-03-13T21:46:50&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/labs/git/</loc><lastmod>2020-03-10T14:46:59&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/logs/arped/</loc><lastmod>2020-03-10T10:59:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/</loc><lastmod>2020-03-10T10:59:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/lab/</loc><lastmod>2020-03-10T10:59:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/logs/</loc><lastmod>2020-03-10T10:59:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/log/</loc><lastmod>2020-03-10T10:59:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/about/</loc><lastmod>2020-02-17T09:26:23&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/categories/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/2019/12/memperbaiki-hostname-ubuntu/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/posts/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/server/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/categories/troubleshoot/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/categories/tutorial/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/ubuntu/</loc><lastmod>2019-12-13T23:00:34&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/debian/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/linux/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/2019/11/menyesuaikan-ukuran-swap-pi-zero/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/php/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/raspberry-pi/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/rpi-zero-w/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/tags/swap/</loc><lastmod>2019-11-12T13:30:00&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/2019/01/halo-dunia/</loc><lastmod>2019-01-01T19:01:01&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>/book/</loc><priority>0</priority></url></urlset>

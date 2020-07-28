@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>php on Ari Effendi</title>
-    <link>https://arifnd.github.io/tags/php/</link>
-    <description>Recent content in php on Ari Effendi</description>
+    <title>php on Catatanku</title>
+    <link>/tags/php/</link>
+    <description>Recent content in php on Catatanku</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Tue, 12 Nov 2019 13:30:00 +0700</lastBuildDate>
     
-	<atom:link href="https://arifnd.github.io/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
-      <link>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</link>
+      <link>/2019/11/menyesuaikan-ukuran-swap-pi-zero/</link>
       <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
       
-      <guid>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</guid>
-      <description>source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
-PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</description>
+      <guid>/2019/11/menyesuaikan-ukuran-swap-pi-zero/</guid>
+      <description>&lt;p&gt;Berawal dari kendala ketika memasang paket PHP melalui composer.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;PHP Fatal error: Uncaught exception &amp;#39;ErrorException&amp;#39; with message &amp;#39;proc_open(): fork failed - Cannot allocate memory&amp;#39; in phar
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     
   </channel>

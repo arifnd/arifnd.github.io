@@ -1,53 +1,158 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ari Effendi</title>
-    <link>https://arifnd.github.io/</link>
-    <description>Recent content on Ari Effendi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 Dec 2019 23:00:34 +0700</lastBuildDate>
-    
-	<atom:link href="https://arifnd.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Mengatasi hostname Ubuntu 18.04 yang berubah ketika di-restart</title>
-      <link>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</link>
-      <pubDate>Fri, 13 Dec 2019 23:00:34 +0700</pubDate>
-      
-      <guid>https://arifnd.github.io/posts/2019/12/mengatasi-hostname-ubuntu-18.04-yang-berubah-ketika-di-restart/</guid>
-      <description>Hostname atau host name atau nama komputer adalah nama yang diberikan untuk mengenali perangkat dalam jaringan. Umumnya hostname memiliki nama yang berbeda ataupun unik. Pada ubuntu hostname dapat diubah menggunakan perintah hostnamectl ataupun dengan menyunting berkas /etc/hostname. Namun, pada ubuntu versi 18.04 terdapat kendala yang mengakibatkan hostname yang sudah disesuaikan kembali pada konfigurasi awal.
-Untuk mengatasi kendala ini perlu dilakukan penyesuai pada berkas  /etc/cloud/cloud.cfg dengan langkah sebagai berikut:
- buka terminal, jika ubuntu tidak memiliki GUI silahkan lewati langkah ini.</description>
-    </item>
-    
-    <item>
-      <title>Tentang</title>
-      <link>https://arifnd.github.io/about/</link>
-      <pubDate>Tue, 10 Dec 2019 02:42:40 +0700</pubDate>
-      
-      <guid>https://arifnd.github.io/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Menyesuaikan ukuran swap file di Raspberry Pi Zero W</title>
-      <link>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</link>
-      <pubDate>Tue, 12 Nov 2019 13:30:00 +0700</pubDate>
-      
-      <guid>https://arifnd.github.io/posts/2019/11/menyesuaikan-ukuran-swap-file-di-raspberry-pi-zero-w/</guid>
-      <description>source: unsplash.com  Berawal dari kendala ketika memasang paket PHP melalui composer.
-PHP Fatal error: Uncaught exception &#39;ErrorException&#39; with message &#39;proc_open(): fork failed - Cannot allocate memory&#39; in phar Selanjutnya setelah melakukan pencarian, diketahui bahwa penyebabnya adalah kurangnya memori ataupun swap yang dimiliki oleh sistem. Dikarenakan menjalankan composer pada Board Raspberry Pi Zero W yang memiliki memori 512MB dan swap bawaan 100MB. Sementara composer mensyaratkan minimal memori maupun swap yang dimiliki adalah 1GB.</description>
-    </item>
-    
-    <item>
-      <title>Halo Dunia</title>
-      <link>https://arifnd.github.io/posts/2019/01/halo-dunia/</link>
-      <pubDate>Tue, 01 Jan 2019 19:01:01 +0700</pubDate>
-      
-      <guid>https://arifnd.github.io/posts/2019/01/halo-dunia/</guid>
-      <description> source: unsplash.com  </description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Catatanku | Catatanku</title>
+        <link>/</link>
+        <description>Catatanku | Catatanku</description>
+        <generator>Hugo -- gohugo.io</generator><language>id</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 10 Mar 2020 10:59:36 &#43;0700</lastBuildDate><atom:link href="/" rel="self" type="application/rss+xml" /><item>
+                <title>Labs</title>
+                <link>/labs/</link>
+                <pubDate>Sun, 29 Mar 2020 17:02:10 &#43;0700</pubDate><guid>/labs/</guid>
+                <description></description>
+            </item><item>
+                <title>Laboratorium</title>
+                <link>/lab/</link>
+                <pubDate>Tue, 10 Mar 2020 10:59:36 &#43;0700</pubDate><guid>/lab/</guid>
+                <description>&lt;h3 id=&#34;aplikasi&#34;&gt;Aplikasi&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/labs/acme-sh&#34; rel=&#34;noopener noreffer&#34;&gt;acme.sh&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/labs/git&#34; rel=&#34;noopener noreffer&#34;&gt;Git&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/labs/mysql&#34; rel=&#34;noopener noreffer&#34;&gt;MySQL&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;framework&#34;&gt;Framework&lt;/h3&gt;
+&lt;h3 id=&#34;hosting&#34;&gt;Hosting&lt;/h3&gt;
+&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/labs/basic-command&#34; rel=&#34;noopener noreffer&#34;&gt;Perintah Dasar&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ### Pemrograman
+- Node.js
+- PHP
+- Python --&gt;
+&lt;h3 id=&#34;server&#34;&gt;Server&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/labs/docker&#34; rel=&#34;noopener noreffer&#34;&gt;Docker&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
+                <title>Logs</title>
+                <link>/logs/</link>
+                <pubDate>Tue, 10 Mar 2020 10:59:36 &#43;0700</pubDate><guid>/logs/</guid>
+                <description></description>
+            </item><item>
+                <title>Riwayat</title>
+                <link>/log/</link>
+                <pubDate>Tue, 10 Mar 2020 10:59:36 &#43;0700</pubDate><guid>/log/</guid>
+                <description>&lt;!-- **2020-07-13**
+
+---
+- 
+-  --&gt;
+&lt;!-- **2020-07-18** --&gt;
+&lt;p&gt;&lt;strong&gt;2020-07-17&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://getterms.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;getterms.io&lt;/a&gt;
+: alternative generator untuk Privacy Policy dan TOS.&lt;/li&gt;
+&lt;li&gt;Menampilkan informasi arsitektur di &lt;a href=&#34;https://alpinelinux.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;Alpine Linux&lt;/a&gt;
+ dengan perintah &lt;code&gt;dpkg --print-architecture|awk -F&#39;-&#39; &#39;{print $NF}&#39;&lt;/code&gt;, &lt;a href=&#34;https://github.com/tianon/gosu/issues/24&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;link&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;Menampilkan informasi arsitektur di Debian/Ubuntu dengan perintah &lt;code&gt;dpkg --print-architecture&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Tutorial membuat image doker minimalis untuk aplikasi dengan bahasa pemrograman golang, &lt;a href=&#34;https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;link&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ldd&lt;/code&gt; perintah untuk mengetahui &lt;em&gt;shared library&lt;/em&gt; dari sebuah aplikasi linux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2020-07-16&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;Mengenal Trusted Web Activities, &lt;a href=&#34;https://codelabs.developers.google.com/codelabs/getting-started-with-twas/index.html#0&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;link&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;Solusi agar perangkat Android terdeteksi di linux saat &lt;em&gt;debug&lt;/em&gt; program, &lt;a href=&#34;https://stackoverflow.com/questions/43771918/how-do-i-set-up-udev-rules-for-debugging-a-physical-android-device-with-android&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;link&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hookbin.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;hookbin&lt;/a&gt;
+: Online Tool untuk inspeksi HTTP Resquest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2020-07-14&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tambahkan repositori manual di &lt;code&gt;/etc/apt/sources.list&lt;/code&gt; untuk mengatasi gagal &lt;em&gt;install&lt;/em&gt; docker di RPi OS Buster.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;deb [arch=armhf] https://download.docker.com/linux/debian buster stable&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2020-07-13&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img
+        class=&#34;lazyload&#34;
+        src=&#34;/svg/loading.small.min.svg&#34;
+        data-sizes=&#34;auto&#34;
+        data-srcset=&#34;/images/rpi-4-aluminium-case.jpg, 1.5x, 2x&#34;
+        data-src=&#34;&#34;
+        alt=&#34;RPi4&#34;
+        title=&#34;RPi4&#34; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beli Raspberry Pi 4 2GB.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Install&lt;/em&gt; Raspberry Pi OS (32-bit) Lite.&lt;/li&gt;
+&lt;li&gt;Suhu RPi 4 47-49&amp;rsquo;C meskipun menggunakan pendingin aluminium dan dalam kondisi &lt;em&gt;fresh install&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Gagal &lt;em&gt;install&lt;/em&gt; docker dari tutorial &lt;a href=&#34;https://docs.docker.com/engine/install/debian/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;em&gt;Install Docker Engine on Debian&lt;/em&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
+                <title>Tentang</title>
+                <link>/about/</link>
+                <pubDate>Mon, 17 Feb 2020 09:26:23 &#43;0700</pubDate><guid>/about/</guid>
+                <description>&lt;p&gt;Manusia, tinggal di bumi, belum punya rencana untuk tinggal di planet lain, bekerja di salah satu instansi pemerintah daerah, &lt;code&gt;co-founder&lt;/code&gt; &lt;a href=&#34;https://zerosix.id&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;ZEROSIX&lt;/a&gt;
+, sudah menikah, &lt;code&gt;books eater&lt;/code&gt;, &lt;code&gt;poems maker&lt;/code&gt;, &lt;code&gt;coder&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It always seems impossible until it&amp;rsquo;s done.&lt;/p&gt;
+— &lt;cite&gt;Nelson Mandela&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;proyek&#34;&gt;Proyek&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/arifnd/ssc&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;strong&gt;SSC&lt;/strong&gt; (Server Script Collections)&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Kumpulan bash script untuk memudahkan mengelola dan mengkonfigurasi server linux.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;dev-box&#34;&gt;Dev Box&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Asus X450J&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  i7-4710HQ
+   8GB RAM
+   NVIDIA GeForce 840M
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.hardkernel.com/shop/odroid-c2/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;strong&gt;Odroid C2&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;strong&gt;Raspberry Pi 4&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.gsmarena.com/lg_nexus_4_e960-5048.php&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer&#34;&gt;&lt;strong&gt;Nexus 4&lt;/strong&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            </item><item>
+                <title>Posts</title>
+                <link>/posts/</link>
+                <pubDate>Fri, 13 Dec 2019 23:00:34 &#43;0700</pubDate><guid>/posts/</guid>
+                <description></description>
+            </item><item>
+                <title></title>
+                <link>/book/</link>
+                <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate><guid>/book/</guid>
+                <description></description>
+            </item></channel>
 </rss>
