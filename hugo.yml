@@ -1,0 +1,90 @@
+baseURL: "https://examplesite.com/"
+title: Catatanku
+paginate: 5
+theme: PaperMod
+
+defaultContentLanguage: id
+languageCode: id
+languageName: Indonesia
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+params:
+  env: production
+  title: Catatanku
+  description: "Catatan seorang ayah"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Ari Effendi
+  DateFormat: "2 January 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  cover: 
+    hiddenInList: true
+
+  homeInfoParams:
+    Title: "Ari Effendi"
+    Content: >
+            Seorang Ayah yang suka _ngoprek_ seputar:
+            
+            - __pemrograman__ | __linux__ | __server__ | __mikrokontroller__.
+
+            - Tinggal di Bumi dan belum punya rencana untuk tinggal di planet lain.
+
+            - Hobi membaca dan sedang membiasakan menulis.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/arifnd"
+    - name: Rss
+      url: "index.xml"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+menu:
+  main:
+    - name: Arsip
+      url: archives
+      weight: 5
+    - name: Pencarian
+      url: search/
+      weight: 10
+    - name: Label
+      url: tags/
+      weight: 10
