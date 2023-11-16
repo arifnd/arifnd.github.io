@@ -17,7 +17,7 @@ showtoc: true
 
 Yarr (_Yet Another RSS Reader_) adalah aplikasi agregator berita berbasis web yang dapat digunakan sebagai aplikasi desktop atau server yang di-_host_ sendiri. Namun, Raspberry Pi Zero W memiliki arsitektur ARMv6 yang tidak didukung oleh binary standar Yarr. Untuk menjalankan Yarr di Raspberry Pi Zero W, Anda perlu membangunnya secara manual. Artikel ini akan memberikan panduan langkah demi langkah tentang cara membangun dan menjalankan Yarr di Raspberry Pi Zero W, serta bagaimana membuat layanan `systemd` agar Yarr tetap berjalan saat Raspberry Pi _booting_ atau _restart_.
 
-Versi Go saat panduan ini ditulis adalah __1.21.4__. Pastikan Anda menyesuaikan dengan versi yang terbaru. Anda juga perlu memastikan bahwa Go sudah terinstal di Raspberry Pi Anda. Untuk panduan instalasi Go di Raspberry Pi, Anda dapat merujuk ke panduan ini
+Versi Go saat panduan ini ditulis adalah __1.21.4__. Pastikan Anda menyesuaikan dengan versi yang terbaru. Anda juga perlu memastikan bahwa Go sudah terinstal di Raspberry Pi Anda. Untuk panduan instalasi Go di Raspberry Pi, Anda dapat merujuk ke [panduan ini]({{< ref "../instalasi-go-di-raspberry-pi-zero-w/index.id.md" >}})
 
 ## Langkah 1: Unduh Repositori Yarr
 Pertama, Anda perlu mengunduh kode sumber Yarr. Anda dapat melakukannya dengan menjalankan perintah berikut:
