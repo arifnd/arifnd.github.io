@@ -1,6 +1,7 @@
 ---
 title: 'Instalasi dan Konfigurasi Monitorix di Debian/Ubuntu'
 date: 2023-12-06T10:00:00+07:00
+lastmod: 2023-12-06T20:45:00+07:00
 draft: false
 cover: 
   image: featured-image.png
@@ -42,7 +43,7 @@ sudo apt install rrdtool libwww-perl libmailtools-perl libmime-lite-perl librrds
 Unduh berkas `.deb`:
 
 ```bash
-wget monitorix_3.15.0-izzy1_all.deb
+wget https://www.monitorix.org/monitorix_3.15.0-izzy1_all.deb
 ```
 
 Lanjutkan dengan menginstal Monitorix menggunakan perintah `dpkg`:
