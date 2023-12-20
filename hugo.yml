@@ -56,13 +56,13 @@ params:
   homeInfoParams:
     Title: "Ari Effendi"
     Content: >
-            Seorang Ayah yang suka _ngoprek_ seputar:
+            Seorang Ayah yang memiliki minat terhadap
             
-            - __pemrograman__ | __linux__ | __server__ | __mikrokontroller__.
+            - __pemrograman__ / __linux__ / __server__ / __mikrokontroller__.
 
-            - Tinggal di Bumi dan belum punya rencana untuk tinggal di planet lain.
+            - Tinggal di Bumi dan belum memiliki rencana tinggal di planet lain.
 
-            - Hobi membaca dan sedang membiasakan menulis.
+            - Gemar membaca dan sedang membiasakan menulis.
 
   socialIcons:
     - name: github
