@@ -1,5 +1,4 @@
 baseURL: "https://arifnd.github.io/"
-pagination.pagerSize: 5
 title: Catatanku
 theme: PaperMod
 
@@ -13,6 +12,9 @@ buildFuture: false
 buildExpired: false
 
 # googleAnalytics: UA-123-45
+
+pagination:
+  pagerSize: 5
 
 minify:
   disableXML: true
