@@ -1,6 +1,6 @@
-baseURL: "https://fnd.my.id/"
+baseURL: "https://arifnd.github.io/"
+pagination.pagerSize: 5
 title: Catatanku
-paginate: 5
 theme: PaperMod
 
 defaultContentLanguage: id
