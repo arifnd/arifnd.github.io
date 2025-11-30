@@ -88,3 +88,7 @@ menu:
     - name: Label
       url: tags/
       weight: 10
+
+caches:
+  images:
+    dir: :cacheDir/images
