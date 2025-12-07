@@ -58,11 +58,15 @@ params:
   homeInfoParams:
     Title: "Ari Effendi"
     Content: >
-            Seorang Ayah yang memiliki minat terhadap
-            
-            - __pemrograman__ / __linux__ / __server__ / __mikrokontroller__.
+            Seorang Ayah yang memiliki ketertarikan terhadap
 
-            - Tinggal di Bumi dan belum memiliki rencana tinggal di planet lain.
+            - __pemrograman__ / 
+              [__linux__](/tags/linux/) / 
+              [__server__](/tags/server/) / 
+              [__mikrokontroller__](/tags/mikrokontroler/).
+
+            - Tinggal di Bumi dan belum memiliki rencana pindah 
+              [ke planet lain](https://www.theguardian.com/technology/2024/sep/15/musk-humans-live-on-mars-spacex).
 
             - Gemar membaca dan sedang membiasakan menulis.
 
