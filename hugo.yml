@@ -11,8 +11,6 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-# googleAnalytics: UA-123-45
-
 pagination:
   pagerSize: 5
 
@@ -51,6 +49,10 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+
+  analytics:
+    google:
+      SiteVerificationTag: 0W6l-qMUtBpBhIXJOrZPYDgtna1BBrdR9C8KkO5ClYs
 
   cover: 
     hiddenInList: true
