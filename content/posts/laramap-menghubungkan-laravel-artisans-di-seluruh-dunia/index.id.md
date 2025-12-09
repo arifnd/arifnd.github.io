@@ -3,7 +3,7 @@ title: 'Laramap: Menghubungkan Laravel Artisans di Seluruh Dunia'
 date: 2025-12-09T10:00:00+07:00
 draft: false
 cover: 
-  image: featured-image.png
+  image: images/featured-image.png
 tags:
   - laravel
   - php
@@ -24,7 +24,7 @@ Saat ini sudah ada __4076__ Artisans dari __156__ negara yang terhubung di Laram
 
 Laramap adalah peta komunitas global untuk developer Laravel. Kamu bisa membuat profil, terhubung dengan developer lain, hingga melihat bagaimana komunitas ini tumbuh di berbagai belahan dunia.
 
-![Laramap Profile](laramap-profile.png)
+![Laramap Profile](images/laramap-profile.png)
 
 Dengan Laramap, kamu tidak hanya menjadi bagian dari komunitas, kamu juga bisa melihat komunitas itu secara nyata.
 
