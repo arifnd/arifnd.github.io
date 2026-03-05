@@ -1,6 +1,7 @@
 ---
 title: 'Build NullClaw untuk Raspberry Pi Zero W'
 date: 2026-02-24T05:00:00+07:00
+lastmod: 2026-03-04T11:00:00+07:00
 draft: false
 tags:
   - RPi Zero W
@@ -83,12 +84,16 @@ Jika sudah selesai, masuk ke folder project dan memilih versi terbaru dengan men
 
 ```bash
 cd nullclaw
-git checkout v2026.2.21
+git checkout v2026.3.4
 ```
+
+> Sesuaikan `v2026.3.4` dengan versi NullClaww terbaru.
 
 ## Langkah 4: Sesuaikan Kode untuk 32-bit
 
-Dikarenakan arsitektur 32-bit belum didukung oleh NullClaw, beberapa kode perlu disesuaikan dengan menjalankan perintah:
+Sejak versi `v2026.03.4` NullClaw sudah mendukung 32-bit, jadi langkah ini bisa dilewati. Informasi lengkap dapat melihat tautan [#261](https://github.com/nullclaw/nullclaw/pull/261).
+
+~Dikarenakan arsitektur 32-bit belum didukung oleh NullClaw, beberapa kode perlu disesuaikan dengan menjalankan perintah:~
 
 ```bash
 find src -type f -name "*.zig" -exec sed -i 's/std.atomic.Value(u64)/std.atomic.Value(u32)/g' {} +
