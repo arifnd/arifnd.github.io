@@ -61,16 +61,19 @@ params:
     Title: "Ari Effendi"
     Content: >
             Seorang Ayah yang memiliki ketertarikan terhadap
+            <br/>
 
-            - __pemrograman__ / 
+            __pemrograman__ / 
               [__linux__](/tags/linux/) / 
               [__server__](/tags/server/) / 
               [__mikrokontroller__](/tags/mikrokontroler/).
+            <br/>
 
-            - Tinggal di Bumi dan belum memiliki rencana pindah 
+            Tinggal di Bumi dan belum memiliki rencana pindah 
               [ke planet lain](https://www.theguardian.com/technology/2024/sep/15/musk-humans-live-on-mars-spacex).
+            <br/>
 
-            - Gemar membaca dan sedang membiasakan menulis.
+            Gemar membaca dan sedang membiasakan menulis.
 
   socialIcons:
     - name: github
